@@ -1,0 +1,112 @@
+.features{
+    margin-top: 115px;
+    margin-bottom: 123px;
+}
+.features__desc{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center; 
+    color: #DC780B;   
+    margin-bottom: 7px;
+}
+.features__title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    color:#150C01; 
+    margin-bottom: 44px; 
+    text-align: center;
+}
+.features__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.features__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features__card__title{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #150C01;  
+    margin-bottom: 15px;
+}
+.features__card__desc{
+    max-width: 300px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #150C01;
+}
+.features__card__img{
+    margin-bottom: 33px;
+}
+
+@media (max-width:1000px){
+    .features{
+        margin-bottom: 100px;
+        margin-top: 90px;
+    }
+}
+
+@media (max-width:788px){
+    .features{
+        margin-bottom: 90px;
+        margin-top: 60px;
+    }
+    .features__cards{
+        justify-content: center;
+    }
+}
+
+@media (max-width:470px){
+    .features{
+        margin-bottom: 80px;
+    }
+    .features__title{
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .features__desc{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:380px){
+    .features{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .features__title{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .features__desc{
+        font-size: 10px;
+    }
+    .features__card__title{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .features__card__desc{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .features__card__img{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,187 @@
+.menu{
+    margin-bottom: 90px;
+}
+.menu__info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu__desc{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: #DC780B;    
+    margin-bottom: 9px;
+}
+.menu__title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #150C01;
+    margin-bottom: 25px;
+}
+.menu__text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #150C01; 
+    margin-bottom: 60px;   
+    max-width: 748px;
+    text-align: center;
+}
+.menu__cads{
+    display: grid;
+    grid-template-columns:repeat( 3,1fr);
+    gap: 30px; 
+}
+.menu__img-card__img{
+    width: 100%;
+    height: 100%;
+}
+.menu__card{
+    border: 1px solid #0000001A;
+    border-radius:81px 12px 10px 10px ;
+    border-top:none;
+}
+.menu__cards__info{
+    padding: 21px 25px 25px;
+}
+.menu__card__part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.menu__card__title{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;  
+    color: #150C01;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.menu__card__price{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #150C01;
+}
+.menu__card__text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #150C01;
+    margin-bottom: 20px;
+}
+.menu__card__btns-retng{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__card__btn{
+    padding: 10px  15px;
+    font-size: 20px;
+    background-color: #DC780B;
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+.menu__card__btn:hover{
+    background-color: transparent;
+    border: 1px solid #DC780B;
+    color: #DC780B;
+}
+
+@media (max-width:1200px){
+    .menu__cads{
+        grid-template-columns:repeat(2,1fr) ;
+    }
+}
+@media (max-width:780px){
+    .menu__desc{
+        font-size: 16px;
+        margin-bottom: 9px;
+    }
+    .menu__title{
+        font-family: Philosopher;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .menu__text{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .menu__card__title{
+        font-size: 20px;
+    }
+    .menu__card__price{
+        font-size: 20px;
+    }
+    .menu__card__text{
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:600px){
+    .menu__cads{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .menu__desc{
+        font-size: 14px;    
+        margin-bottom: 4px;
+    }
+    .menu__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .menu__text{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .menu__card__title{
+        font-size: 20px;
+    }
+    .menu__card__price{
+        font-size: 20px;
+    }
+    .menu__card__text{
+        font-size: 14px;
+    }
+}
+@media (max-width:350px){
+    .menu__desc{
+        font-size: 12px;    
+        margin-bottom: 2px;
+    }
+    .menu__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .menu__text{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .menu__card__title{
+        font-size: 18px;
+    }
+    .menu__card__price{
+        font-size: 18px;
+    }
+    .menu__card__text{
+        font-size: 12px;
+    }
+}
